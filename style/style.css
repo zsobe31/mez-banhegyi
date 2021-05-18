@@ -1,0 +1,254 @@
+/* GENERAL STYLE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+}
+
+
+/* HEADER */
+
+.header {
+    background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .3)), url("reggeli-kep.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 10% 0;
+}
+
+.header h1 {
+    text-align: center;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 5rem;
+    font-family: 'Italianno', cursive;
+}
+
+
+/* NAVBAR */
+
+nav .navlogo {
+    width: 3rem;
+    height: auto;
+}
+
+
+/* CONTENT */
+
+hr {
+    width: 15%;
+    border: 1px solid #383434;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    padding: 2rem 0 .5rem 0;
+}
+
+.general {
+    background-color: #fd9d2c;
+}
+
+
+/* about */
+
+.about img {
+    display: block;
+    margin: auto;
+    width: 35%;
+    height: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: .5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .3);
+}
+
+.about p {
+    margin-bottom: 0;
+    width: 75%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: justify;
+}
+
+
+/* product */
+
+.products .container {
+    padding: 50px;
+}
+
+.products a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .7);
+    transition: .5s;
+}
+
+.products a:hover {
+    transform: scale(1.01);
+}
+
+.flex-container-product {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.product {
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    /* background-color: #c4782225; */
+    border-radius: 10px;
+    /* box-shadow: 10px 10px 15px rgba(0, 0, 0, .1); */
+}
+
+.flex-container-product img {
+    width: 200px;
+    height: 125px;
+    margin: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.flex-container-partners {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.flex-container-partners img {
+    width: 200px;
+    margin: 10px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.products .partners {
+    margin: auto;
+    /* background-color: seagreen; */
+    width: 1000px;
+    text-align: center;
+    height: 450px;
+    /* padding: 100px 0; */
+}
+
+.products .partners hr {
+    margin-bottom: 50px;
+}
+
+
+/* .products .partners .row {
+    background-color: silver;
+    padding: 100px 0;
+} */
+
+
+/* .products .partners div {
+    padding: 50px;
+    padding: 50px;
+    width: 250px;
+    display: inline;
+    background-color: royalblue;
+} */
+
+
+/* .products .partners img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, .4);
+} */
+
+
+/* gallery */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+
+.flex-container .image {
+    width: 20%;
+    margin: 2%;
+}
+
+.flex-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    opacity: .7;
+    transition: .3s;
+}
+
+.flex-container img:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, .1);
+}
+
+
+/* contact */
+
+.contact {
+    text-align: center;
+    /* height: 35rem; */
+}
+
+.contact .container {
+    padding: 50px 0 0 0;
+}
+
+.contact .icons {
+    display: inline;
+    margin: 2% 5%;
+}
+
+.contact iframe {
+    padding: 50px 0 50px 0;
+    width: 75%;
+    height: 500px;
+    border: none;
+}
+
+
+/* FOOTER */
+
+.footer {
+    background-color: #575664;
+    padding: 2rem 0;
+    text-align: center;
+    height: 75px;
+}
+
+.footer a {
+    margin-left: .3rem;
+    color: #e28b27;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 1000px) {
+    .header h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .header h1 {
+        font-size: 3rem;
+        line-height: 3rem;
+    }
+    .contact .icons {
+        display: block;
+        padding: 12px;
+    }
+}
